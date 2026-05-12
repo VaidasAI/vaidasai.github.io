@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vaidas AI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Self Heal Demo</title>
 </head>
 <body>
-  <p>Vaidas AI</p>
+  <h1>Simple Locator Demo</h1>
+  <div class="action-section">
+    <label for="demo-button">Try the demo:</label>
+    <button id="demo-button"
+            title="Demo Action Button"
+            aria-label="Click to trigger demo action"
+            data-testid="demo-cta"
+            onclick="document.getElementById('status').textContent='Clicked';">
+      Click me
+    </button>
+  </div>
+  <p id="status">Not clicked</p>
 </body>
 </html>
